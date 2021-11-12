@@ -26,13 +26,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map is a method that automatically creates a new array. It works by converting data and requires a return. Whatever is included in the return statement is applied to each element in the array. 
+
+.reduce is a method used to get sums and products of an array. It takes two arguments, the accumulator (which acts like the running total) and the currentValue. It also must include an initial value which tells us which numbers to start from. If it's going to calculate a sum, the initial value is 0 and if it is calculating a product, it's usually 1 (since anything multiplied by 0 is 0).
+
+.filter is a method that automatically creates a new array. It is used to filter out results based on a conditional. If value === true it should return to a new array.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function is a function that recieves a function as an argument. A callback is a function that is passed into another function to be called.
 
 3. Explain what a closure is.
 
+Closure is the ability of an inner function to reach outside to access a variable from an outer function or global scope.
+
 4. Describe the four principles of the 'this' keyword.
+Window binding - when .this isn't given context it binds to the window. This is basically an error because you never want to bind .this to the window. 
+
+Implicit binding - what's left of the . is the object is what .this will refer to. ie myObj.item, myObj will be the .this
+
+Explicit binding - when you use .bind .call or .apply to tell explicitly what .this should be. Call invokes the function immediately, while .bind doesn't and instead stores it as a function to invoke later.
+
+New binding - requires a constructor function that points to the newly created object.
 
 5. Why do we need super() in an extended class?
+Super works with extends. Extends tells what the parent class is. Super acts like .call and accesses the properties of the parent class to pass to the child. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
