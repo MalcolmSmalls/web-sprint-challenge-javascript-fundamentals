@@ -17,6 +17,8 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
+// This is an example of closure. During closure, the nested function can reach out and access variables from the outside function. These can only be passed down, not up, so nestFunction could reach out and use a variable from it's parent function myFunction, or the global scope, such as external. But myFunction could not reach in and access a variable declared in nestedFunction.
+
 
 
 
